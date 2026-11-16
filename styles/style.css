@@ -2,40 +2,42 @@
 html {
     scroll-behavior: smooth;
 }
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 100px; 
+    padding: 92px 50px 100px;
 }
 
 .header__links-list {
     display: flex;
     align-items: center;
-    list-style: none; 
+    list-style: none;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 .header__links-list-item {
     display: flex;
     align-items: center;
-    gap: 13px; 
+    gap: 13px;
     margin-right: 13px;
 }
 
-   
- .header__links-list-item:last-child {
+
+    .header__links-list-item:last-child {
         margin-right: 0;
- }
- .header__links-list-item:not(:last-child)::after {
+    }
+
+    .header__links-list-item:not(:last-child)::after {
         content: "";
         width: 6px;
         height: 6px;
         border: 1px solid #000;
         border-radius: 50%;
         display: block;
- }
+    }
 
 
 .header__links-list-item_no-bullit {
@@ -60,16 +62,16 @@ html {
 
 .header__logo {
     display: block;
-    width: 130px; 
+    width: 130px;
 }
 
 .header__address {
-    justify-self: end; 
-    max-width: 250px; 
+    justify-self: end;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-style: normal; 
+    font-style: normal;
     font-size: 18px;
     line-height: 24px;
 }
@@ -81,11 +83,11 @@ html {
 
 
 body {
-  font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
 
 
-/* --- ОБЛОЖКА (COVER) --- */
+/* Обложка */
 .cover {
     position: relative;
     min-height: 750px;
@@ -96,7 +98,7 @@ body {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 .overlay {
@@ -124,6 +126,7 @@ body {
 .no-letter-spacing {
     letter-spacing: 0;
 }
+
 .aligned-text {
     display: block;
 }
@@ -133,7 +136,7 @@ body {
 }
 
 .aligned-text_center {
-    text-align: center; 
+    text-align: center;
 }
 
 .aligned-text_right {
@@ -165,13 +168,14 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.bet-button:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-}
 
-/* --- СЕКЦИЯ ЛОТЫ --- */
+    .bet-button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+/* Секция лоты */
 .lots {
-    padding: 180px 0 0 0 ;
+    padding: 180px 0 0 0;
 }
 
 .lots__heading {
@@ -192,7 +196,7 @@ body {
 
 .lots__card-list-item {
     width: 334px;
-    min-height: 596px; 
+    min-height: 596px;
 }
 
 .card-link {
@@ -255,33 +259,32 @@ body {
     margin-left: 64px;
 }
 
-/* --- ОБ АУКЦИОНЕ --- */
+/* Об аукционе */
 .about {
     padding: 155px 0 0 0;
     display: grid;
     grid-template-columns: 311px 1fr;
-    gap: 72px; 
+    gap: 72px;
 }
 
 .about__column_left {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 71px;
 }
 
 .about__logo {
     width: 240px;
     height: 240px;
-    background-color: #000; 
+    background-color: #000;
     border-radius: 50%;
-
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .about__logo-image {
-    width: 148px; 
+    width: 148px;
     height: auto;
 }
 
@@ -289,18 +292,18 @@ body {
     font-size: 40px;
     text-transform: uppercase;
     margin-top: 98px;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
 }
 
 .about__text {
     display: flex;
     flex-direction: column;
-    gap: 24px; 
+    gap: 24px;
     font-size: 20px;
     line-height: 1.4;
 }
 
-/* --- ПОДВАЛ (FOOTER) --- */
+/* ПОДВАЛ */
 .footer {
     padding: 180px 50px 82px 50px;
     display: grid;
@@ -316,8 +319,9 @@ body {
     font-size: 18px;
     line-height: 24px;
 }
+
 .footer__menu {
-    text-align: center; /* Выравниваем текст по центру колонки */
+    text-align: center;
 }
 
 .footer__menu-list {
@@ -327,7 +331,7 @@ body {
 }
 
 .footer__menu-list-item {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .footer__menu-link {
@@ -335,20 +339,21 @@ body {
     text-underline-offset: 4px;
     font-size: 18px;
 }
+
 .footer__menu-link_active {
     text-decoration: none;
 }
 
 .footer__social-list {
     display: flex;
-    justify-content: flex-end; 
-    gap: 48px; 
+    justify-content: flex-end;
+    gap: 48px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .footer__social-icon {
-    width: 48px; 
+    width: 48px;
     height: 48px;
 }
